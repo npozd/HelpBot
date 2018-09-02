@@ -37,7 +37,7 @@ public class Bot extends TelegramLongPollingBot {
             long chat_id = update.getMessage().getChatId();
 
             if (update.getMessage().getText().equals("/start")) {
-                SendMessage helloMessage = buildMsg(chat_id, "Hey, Welcome!");
+                SendMessage helloMessage = buildMsg(chat_id, "Hey, Welcome to Limassol Help Bot!");
                 Keyboard.setMainKeyboard(helloMessage);
                 sendMsg(helloMessage);
 
